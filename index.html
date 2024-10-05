@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- Liên kết đến font-awesome để sử dụng các icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Liên kết đến file CSS để định dạng giao diện -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Container chính chứa toàn bộ ứng dụng todolist -->
+    <div class="todolist-container">
+      <!-- Tiêu đề của trang -->
+      <h1>Todo List!</h1>
+
+      <!-- Phần input để nhập công việc và nút thêm công việc -->
+      <div class="input">
+        <!-- Ô input để nhập công việc mới -->
+        <input type="text" placeholder="Add your new Todo ..." />
+        <!-- Nút bấm để thêm công việc với icon 'plus' -->
+        <button class="buttonAdd">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+
+      <!-- Danh sách công việc được hiển thị ở đây dưới dạng danh sách không sắp xếp -->
+      <ul class="listTodo">
+        <!-- Công việc sẽ được thêm vào danh sách này khi người dùng thêm công việc mới -->
+      </ul>
+    </div>
+
+    <!-- Liên kết đến file JavaScript để xử lý logic cho ứng dụng -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    /* Màu nền nhẹ nhàng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todolist-container {
+    width: 400px;
+    background-color: #ffffff;
+    /* Nền trắng cho container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng mờ */
+    border-radius: 12px;
+    /* Bo góc mềm mại */
+    padding: 30px;
+    text-align: center;
+}
+
+.todolist-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input input:focus {
+    border-color: #4a90e2;
+    /* Đổi màu khi input được focus */
+}
+
+.input button {
+    width: 15%;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.input button:hover {
+    background-color: #357ABD;
+    /* Hiệu ứng hover cho nút */
+}
+
+.listTodo {
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.listTodo li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Nhẹ nhàng đổ bóng */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.listTodo li:hover {
+    background-color: #eef5ff;
+    /* Đổi màu khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkDone {
+    text-decoration: line-through;
+    color: #bbb;
+    /* Khi hoàn thành, màu chữ sẽ nhạt đi */
+}
+
+.icon i {
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon i:hover {
+    transform: scale(1.1);
+    /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+.icon .fa-check {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.icon .fa-pen {
+    background-color: #f39c12;
+    color: white;
+}
+
+.icon .fa-trash {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.icon .fa-rotate-right {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Định dạng cho icon sau khi chỉnh sửa */
+.icon .fa-save {
+    background-color: #2980b9;
+    color: white;
+}
+
+.icon i {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
