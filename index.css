@@ -106,6 +106,10 @@ body {
     /* Khi hoàn thành, màu chữ sẽ nhạt đi */
 }
 
+.icon {
+    display: flex;
+}
+
 .icon i {
     font-size: 16px;
     margin-left: 10px;
